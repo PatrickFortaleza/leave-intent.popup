@@ -1,0 +1,130 @@
+div.main-container{
+    position: relative;
+  }
+  
+  .pop-up{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 500;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  
+  .pop-up-wrap{
+    position: relative;
+    height: 100%;
+    width: 100%;
+  
+  }
+  
+  .pop-up-cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 550px;
+    max-height: 500px;
+    background: white;
+    border-radius: 15px;
+    padding: 1.4em;
+    box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #d1d1d1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#d1d1d1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#d1d1d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+  
+  .ui-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ui-bar svg {
+    fill: gray;
+    height: 25px;
+    width: 25px;
+  }
+  
+  .message-cont{
+    display: flex;
+    max-height: 300px;
+  }
+  
+  .image-cont{
+    max-width: 200px;
+  }
+  
+  .image-cont img{
+    max-width: unset;
+    height: 100%;
+  }
+  
+  
+  .exit-cont,
+  .whitepaper-cta{
+    cursor: pointer;
+  }
+  
+  .message-cont .copy-cont{
+    margin-left: 1.4em;
+  }
+  
+  .whitepaper-cta{
+    width: 100%;
+    background: #F6932E;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff !important;
+    padding: .5em;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  
+  .whitepaper-cta:hover,
+  .whitepaper-cta:active,
+  .whitepaper-cta:focus{
+      box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.2);
+      text-decoration: none;
+  
+  }
+  
+  @media screen and (max-width: 950px){
+    .message-cont{
+      flex-direction: column;
+      max-height: unset;
+    }
+    
+    .image-cont{
+      margin: auto;
+    }
+    
+    .image-cont img{
+      max-height: 200px;
+    
+    }
+    
+    .message-cont .copy-cont{
+      margin-left: unset;
+    }
+    
+    .copy-cont h4{
+      margin-top: 1.4em;
+      margin-bottom: 1.4em;
+    }
+    
+  
+  }
+  
+  @media screen and (max-width: 680px){
+    .pop-up-cont{
+      width: 75%;
+      max-height: unset;
+    }
+  
+  }
